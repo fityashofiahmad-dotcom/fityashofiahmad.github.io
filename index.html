@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALON DE BEAUTE</title>
+    <style>
+        body {
+            margin: 0;
+            font-famili: Arial, sans-seif;
+            background-color: #d5f2ff;            
+        }
+        header {
+            background-color: #54a7e7;
+            color: rgb(246, 252, 255);
+            padding: 35px;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #d0f0ff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            text-decoration: none;
+            color: #308ed5;
+            font-size: 20px
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+        }
+        aside {
+            width: 20%;
+            background-color: #c0ebfd;
+            padding: 20px;
+        }
+        aside h3 {
+            color: #54a7e7;
+            font-size: 100px;
+            margin-bottom: 30px;
+        }
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+        aside ul li {
+            margin-bottom: 20px;
+        }
+        aside ul li a {
+            color:#333;
+            text-decoration: none;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+        h2 {
+            color: #54a7e7;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(180px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: rgb(230, 245, 255);
+            border-radius: 12px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+        .card p {
+            margin-top: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        footer {
+            background-color: #54a7e7;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>Salon De Beaute</header>
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Layanan</a>
+        <a href="#">Promo</a>
+        <a href="#">Reservasi</a>
+        <a href="#">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <aside>
+            <h4>Kategori</h4>
+            <ul>
+                <li><a href="#">Facial Cleanser</a></li>
+                <li><a href="#">Moisturizer</a></li>
+                <li><a href="#">Sunscreen</a></li>
+                <li><a href="#">Serum</a></li>
+                <li><a href="#">Toner</a></li>
+                <li><a href="#">Facial Cream</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <h1>Skincare Populer Saat Ini</h1>
+            <div class="grid">
+                <div class="card">
+                    <img src="SkintificMshNiacinamideBrighteningMoisturizerGel.jpg" alt="Moisturizer">
+                    <p>SKINTIFIC MSH Niacinamide Brightening Moisturizer Gel</p>
+                </div>
+                <div class="card">
+                    <img src="SKINTIFIC5XCeramideSoothingToner.jpg" alt="Toner">
+                    <p>SKINTIFIC 5X Ceramide Soothing Toner</p>
+                </div>
+                <div class="card">
+                    <img src="Glad2GlowMilkAminoAcidsBrighteningCleanser.jpg" alt="Facial Wash">
+                    <p>G2G Glow Milk Amino Acids Brightening Cleanser</p>
+                </div>
+                <div class="card">
+                    <img src="GLAD2GLOWGELCLEANSERBLUEBERRY.jpg" alt="Facial Wash">
+                    <p>G2G Gel Cleanser Blueberry</p>
+                </div>
+            </div>
+
+            <h1>Facial Cream Skincare</h1>
+            <div class="grid">
+                <div class="card">
+                    <img src="AnuaHeartleafCalmingCream.jpg" alt="Facial Cream">
+                    <p>ANUA Heart Leaf Calming Cream</p>
+                </div>
+                <div class="card">
+                    <img src="InnisfreeFacialCream.jpg" alt="Facial Cream">
+                    <p>INNISFREE Facial Cream</p>
+                </div>
+                <div class="card">
+                    <img src="KojicAcidFaceCream.jpg" alt="Facial Cream">
+                    <p>KOJIC Acid Face Cream</p>
+                </div>
+                <div class="card">
+                    <img src="WardahCrystalSecretDayCream.jpg" alt="Facial Cream">
+                    <p>WARDAH Crystal Secret Day Cream</p>
+                </div>
+                <div class="card">
+                    <img src="wardahdaucream.jpg" alt="Facial Cream">
+                    <p>WARDAH Renew You Day Cream</p>
+                </div>
+                <div class="card">
+                    <img src="WARDAHday&nightcream.jpg" alt="Facial Cream">
+                    <p>WARDAH Lightening Day & Night Cream</p>
+                </div>
+                <div class="card">
+                    <img src="WARDAHLighteningNightCream.jpg" alt="Facial Cream">
+                    <p> WARDAH Lightening Night Cream</p>
+                </div>
+            </div>
+
+            <h1>Facial Cleanser Skincare</h1>
+            <div class="grid">
+                <div class="card">
+                    <img src="CERAVEAcneFoamingCreamCleanser.jpg" alt="Face Wash">
+                    <p>CERAVE Acne Foaming Cream Cleanser</p>
+                </div>
+                <div class="card">
+                    <img src="COSRXGelCleanser.jpg" alt="Face Wash">
+                    <p>CORSX Gel Cleanser</p>
+                </div>
+                <div class="card">
+                    <img src="G2GFacialWashYuzuAHABlackheadExploiatingCleanser.jpg" alt="Face Wash">
+                    <p>G2G Facial Wash Yuzu AHA Blackhead Exploliating Cleanser</p>
+                </div>
+                <div class="card">
+                    <img src="G2GSensitiveCalmingGelCleanser.jpg" alt="Face Wash">
+                    <p>G2G Sensitive Calming Gel Cleanser</p>
+                </div>
+                <div class="card">
+                    <img src="GLAD2GLOWCentellaSalicylicAcidAcneGelCleanser.jpg" alt="Face Wash">
+                    <p>G2G Centella Salicylic Acid acne Gel Cleanser</p>
+                </div>
+                <div class="card">
+                    <img src="GLAD2GLOWGELCLEANSERBLUEBERRY.jpg" alt="Face Wash">
+                    <p>G2G Gel Cleanser Blueberry</p>
+                </div>
+                <div class="card">
+                    <img src="Glad2GlowMilkAminoAcidsBrighteningCleanser.jpg" alt="Face Wash">
+                    <p>G2G Milk Amino Acids Brightening Cleanser</p>
+                </div>
+                <div class="card">
+                    <img src="Glad2GlowPerfectVitaCCleanser.jpg" alt="Face Wash">
+                    <p>G2G Perfect VITA C Cleanser </p>
+                </div>
+                <div class="card">
+                    <img src="Y.O.UAnti-AcneFacialWash.jpg" alt="Face Wash">
+                    <p>Y.O.U Anti-Acne Facial Wash</p>
+                </div>
+            </div>
+
+            <h1>Toner</h1>
+            <div class="grid">
+                <div class="card">
+                    <img src="G2GCentellaCeramideSoothingToner.jpg" alt="Toner">
+                    <p>G2G Centella Ceramide Soothing Toner</p>
+                </div>
+                <div class="card">
+                    <img src="GARNIERSkinactiveRoseSoothingToner.jpg" alt="Toner">
+                    <p>GARNIER Skin Active Rose Soothing Toner</p>
+                </div>
+                <div class="card">
+                    <img src="Glad2GlowPomegranateNiacinamideBrighteningToner.jpg" alt="Toner">
+                    <p>G2G Pomergranate Niacinamide Brightening Toner</p>
+                </div>
+                <div class="card">
+                    <img src="SKINTIFIC5XCeramideSoothingToner.jpg" alt="Toner">
+                    <p>SKINTIFIC 5X Ceramide Soothing Toner</p>
+                </div>
+                <div class="card">
+                    <img src="SKINTIFICNiacinamideBrighteningEssenceToner.jpg" alt="Toner">
+                    <p>SKINTIFIC Niacinamide Brightening Essence Toner</p>
+                </div>
+                <div class="card">
+                    <img src="SKINTIFICPureCentellaAcneCalmingToner.jpg" alt="Toner">
+                    <p>SKINTIFIC Pure Centella Acne Calming Toner</p>
+                </div>
+            </div>
+
+            <h1>Moisturizer</h1>
+            <div class="grid">
+                <div class="card">
+                    <img src="CERAVEmoisturizingcream.jpg" alt="Moisturizer">
+                    <p> CERAVE Moisturizing Cream</p>
+                </div>
+                <div class="card">
+                    <img src="CETAPHILDailyFacialMoisturizerWithSunscreen.jpg" alt="Moisturizer">
+                    <p>CETAPHIL Daily Facial Moisturizer With Sunscreen SPF 50+</p>
+                </div>
+                <div class="card">
+                    <img src="G2GBrighteningMoisturizer.jpg" alt="Moisturizer">
+                    <p>G2G Brightening Moisturizer</p>
+                </div>
+                <div class="card">
+                    <img src="G2GRetinolMoisturizer.jpg" alt="Moisturizer">
+                    <p>G2G Retinol Moisturizer</p>
+                </div>
+                <div class="card">
+                    <img src="HadalaboUltimateMoisturizing.jpg" alt="Moisturizer">
+                    <p>HadaLabo Ultimate Moisturizing</p>
+                </div>
+                <div class="card">
+                    <img src="InnisfreeHydratingMoisturizer.jpg" alt="Moisturizer">
+                    <p>INNISFREE Hydrating Moisturizer</p>
+                </div>
+                <div class="card">
+                    <img src="LANEIGEcreammoisturizer.jpg" alt="Moisturizer">
+                    <p>LANEIGE Cream Moisturizer</p>
+                </div>
+                <div class="card">
+                    <img src="SKINTIFICRetinolSkinRenewalMoisturiser.jpg" alt="Moisturizer">
+                    <p>SKINTIFIC Retinol Skin Renewal Moisturizer</p>
+                </div>
+                <div class="card">
+                    <img src="TheOriginoteBrighteningMoisturizer.jpg" alt="Moisturizer">
+                    <p>The Originote Brightening Moisturizer</p>
+                </div>
+                <div class="card">
+                    <img src="TheOriginoteHyaluceraMoisturizer.jpg" alt="Moisturizer">
+                    <p>The Originote Hyalucera Moisturizer</p>
+                </div>
+                <div class="card">
+                    <img src="TheOriginoteMoisturizer.jpg" alt="Moisturizer">
+                    <p>The Originote Cica-B5 Soothing Moisturizer</p>
+                </div>
+            </div>
+
+            <h1>Sunscreen</h1>
+            <div class="grid">
+                <div class="card">
+                    <img src="AzarineCalmMyAcneSunscreenMoisturiser.jpg" alt="Sunscreen">
+                    <p>AZARINE Calm My Acne Sunscreen Moisturizer SPF 35 PA++++</p>
+                </div>
+                <div class="card">
+                    <img src="AzarineHydracoolCeraspraySunscreen.jpg" alt="Sunscreen">
+                    <p>AZARINE Hydracool Ceraspray Sunscreen SPF 50 PA++++</p> 
+                </div>
+                <div class="card">
+                    <img src="AZARINEHydrasootheSunscreenGel.jpg" alt="Sunscreen">
+                    <p>AZARINE Hydrasoothe Sunscreen Gel SPF 45 PA++++</p>
+                </div>
+                <div class="card">
+                    <img src="BioreUVSunscreen.jpg" alt="Sunscreen">
+                    <p>BIORE UV Sunscreen SPF 50+ PA++++</p>
+                </div>
+                <div class="card">
+                    <img src="CERAVEHydratingSunscreen.jpg" alt="Sunscreen">
+                    <p>CERAVE Hydrating Sunscreen Broad Spectrum SPF 50</p>
+                </div>
+                <div class="card">
+                    <img src="CETAPHILSunscreen.jpg" alt="Sunscreen">
+                    <p>CETAPHIL sun SPF 50+</p>
+                </div>
+                <div class="card">
+                    <img src="OMGBrightBoosterSunscreen.jpg" alt="Sunscreen">
+                    <p>OMG Bright Booster SPF 50 PA++++</p>
+                </div>
+                <div class="card">
+                    <img src="SkinAquaToneUpSunscreen.jpg" alt="Sunscreen">
+                    <p>SKINAQUA Tone Up UV Essence SPF 50+ PA++++</p>
+                </div>
+                <div class="card">
+                    <img src="SKINTIFICAquaLightDailySunscreen.jpg" alt="Sunscreen">
+                    <p>SKINTIFIC Aqua Light Daily Sunscreen SPF 35 PA++++</p>
+                </div>
+                <div class="card">
+                    <img src="SKINTIFICSunscreenMist.jpg" alt="Sunscreen">
+                    <p>SKINTIFIC SPF 50+ PA++++</p>
+                </div>
+                <div class="card">
+                    <img src="WARDAHsunscreen.jpg" alt="Sunscreen">
+                    <p>WARDAH UV Shield Acne Calming SPF 35 PA++++</p>
+                </div>
+            </div>
+
+           <h1>Serum</h1>
+           <div class="grid">
+                <div class="card">
+                    <img src="GARNIERVitaminCBrighteningSerum.jpg" alt="Serum">
+                    <p>GARNIER Vitamin C Brightening Serum</p>
+                </div>
+                <div class="card">
+                    <img src="Jumisoserumvitamin.jpg" alt="Serum">
+                    <p>JUMISO All Day Vitamin Brightening  & Balancing</p>
+                </div>
+                <div class="card">
+                    <img src="YUESTINGserumvitaminC.jpg" alt="Serum">
+                    <p>YUESTING Vitamin C Facial Serum</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        &copy; 2025 Salon De Beaute | All Rights Reserved
+    </footer>
+</body>
+</html>
